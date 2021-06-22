@@ -8,7 +8,7 @@ const AddTeam = (props) => {
     const [name,setName] = useState('')
 
     const handleSubmit=()=>{
-        fetch(`http://localhost:3000/vaco-api/addTeam`,{
+        fetch(`http://54.201.87.31/api/vaco-api/addTeam`,{
             method:'POST',
             headers:{
                 "content-type":'application/json'

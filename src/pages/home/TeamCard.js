@@ -8,7 +8,7 @@ const TeamCard = (props) => {
     const [players,setPlayers] = React.useState([])
 
     React.useEffect(()=>{
-        fetch('http://localhost:3000/vaco-api/allTeamPlayers',{
+        fetch('http://54.201.87.31/api/vaco-api/allTeamPlayers',{
             method:'POST',
             headers:{
                 "content-type":"application/json"
@@ -21,7 +21,7 @@ const TeamCard = (props) => {
 
 
     const removeTeam =()=>{
-        fetch('http://localhost:3000/vaco-api/removeTeam',{
+        fetch('http://54.201.87.31/api/vaco-api/removeTeam',{
             method:'DELETE',
             headers:{
                 "content-type":"application/json"

@@ -36,10 +36,10 @@ const Players =(props)=>{
     const [modalState,setModalState]=useState(false)
     
     useEffect(()=>{
-        fetch('http://localhost:3000/vaco-api/allplayers')
+        fetch('http://54.201.87.31/api/vaco-api/allplayers')
         .then(res=>res.json())
         .then(playerdata=>{
-            fetch('http://localhost:3000/vaco-api/allTeams')
+            fetch('http://54.201.87.31/api/vaco-api/allTeams')
             .then(res=>res.json())
             .then(data=>{
                 props.setAllTeams(data)
@@ -59,7 +59,7 @@ const Players =(props)=>{
     },[])
 
     const removePlayer =(id)=>{
-        fetch(`http://localhost:3000/vaco-api/removePlayer`,{
+        fetch(`http://54.201.87.31/api/vaco-api/removePlayer`,{
             method:'DELETE',
             headers:{
                 "content-type":"application/json"

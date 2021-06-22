@@ -1,7 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import Togin from './pages/home/Team.js';
 import Players from './pages/players/Players'
-import Header from './Header.js'
 import {
     BrowserRouter as Router,
     Switch,

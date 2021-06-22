@@ -21,7 +21,7 @@ const AddPlayer = (props) => {
     const [teamId,setTeamID] =React.useState('')
 
     const handleSubmit=()=>{
-        fetch(`http://localhost:3000/vaco-api/team/${teamId}/player`,{
+        fetch(`http://54.201.87.31/api/vaco-api/team/${teamId}/player`,{
             method:'POST',
             headers:{
                 "content-type":'application/json'
