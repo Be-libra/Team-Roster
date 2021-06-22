@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body{
+    overflow: hidden;
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    background-color: #EFF7F9;
+
+}
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    padding-left: 10px;
+    padding-bottom: 120px;
+    min-width: 90vw;
+    padding-right: 30px;
+    height: 100vh;
+    .head{
+        display: flex;
+        background-color: transparent;
+        position: static;
+        margin-top: 30px;
+        width: 100%;
+        h2{
+            font-family: "Poppins",sans-serif;
+            font-size: 26px;
+            font-weight: 600;
+            color:#053ED1;
+            margin-bottom: 30px;
+            margin-right: 20px;
+            span{
+                font-weight: 400;
+                color:#053ED1;
+                cursor: pointer;
+            }
+    
+        }
+    }
+    
+    @media (max-width:980px){
+        width: 95vw;
+    }
+    .table-container{
+        width: 100%;
+        margin-left: 10px;
+        overflow-y: auto;
+        &::-webkit-scrollbar{
+            width: 10px;
+            height: 10px;
+        }
+        &::-webkit-scrollbar-thumb{
+            border-radius: 4px;
+            background-color: #053ED1;
+            height: 10px;
+        }
+        &::-webkit-scrollbar-track{
+            background-color: #F4F7FF;
+        }
+        table{
+            thead{
+                tr{
+                    td{
+                        font-family:'Poppins',sans-serif;
+                        justify-content: space-around;
+                        font-size:1.4rem ;
+                        font-weight: 400;
+                        padding: 10px 0px 10px 0;
+                        color: #B0C6FF;
+                    }
+                }
+            }
+            tbody{
+                background: #FFFFFF;
+                tr{
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    background: #FFFFFF;
+                    box-shadow: 0px 2px 6px rgba(5, 62, 209, 0.14);
+                    border-radius: 8px;
+                    font-family: 'Poppins',sans-serif;
+                    font-size: 18px;
+                    cursor: pointer;
+                    
+                    &:hover{
+                        border: 1px solid #4EB4FF;
+                        
+                    }
+                    td{
+                        font-family: 'Poppins',sans-serif;
+                        font-size: 1.05rem;
+                        color: rgba(14,14,14,0.65);
+                        p{
+                            width: 250px;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            color: rgba(14,14,14,0.65);
+                        }
+                        &.delete-icon{
+                            font-size: 25px;
+                            color: #053ED1;
+                            cursor: pointer;
+                            margin-left: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,62 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: ce8ter;
+    background-color: #053ED1;
+    margin-bottom: 50px;
+    z-index: 1;
+    padding: 0;
+    .profile{
+        display: flex;
+        flex-direction: row;
+        margin-left: 20px;
+        font-family: 'Poppins',sans-serif;
+        color: white;
+        align-items: center;
+        background-image: url('../utils/Ellipse\ 50.svg');
+        background-repeat: no-repeat;
+        .profile-img{
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            border:2px solid #FFFFFF;
+            margin-right: 15px;
+            img{
+                height: 100%;
+                width: 100%;
+                border-radius: 100%;
+            }
+        }
+        .profile-desc{
+            p{
+                font-size: 20px;
+                letter-spacing: 1.3px;
+                font-weight: 500;
+                &:nth-child(2){
+                    font-size: 14px;
+                    font-weight: 300;
+                }
+            }
+
+        }
+    }
+    .logout{
+        width:105px;
+        background-image: url('../utils/Ellipse\ 50.svg');
+        background-position: 0%;
+        background-size: cover;
+        color: #FFFFFF;
+        align-self: center;
+        font-size: 40px;
+        padding: 0;
+        padding-right: 30px;
+        cursor: pointer;
+        text-align: right;
+    }
+}

@@ -1,0 +1,77 @@
+html,* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.team{
+    background-color: #EFF7F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    
+}
+.team::after{
+    position: absolute;
+    width: 100vh;
+    height: 100vw;
+    background-size: 150%;
+    content:'';
+    background-image: url('../../../../utils/Background.svg');
+    z-index: 1;
+}
+.team-comp{
+    position: relative;
+    z-index: 3;
+    width: 450px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #fff;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(5, 62, 209, 0.19);
+}
+@media (max-width:760px){
+    .team-comp{
+        width: 100%;
+        height: 100%;
+    }
+}
+.team-comp >h2{
+    padding: 10px;
+    font-size: 28px;
+    font-weight: 600;
+    font-family: "Poppins",sans-serif;
+    letter-spacing: 0px;
+    word-spacing: 2.5px;
+    text-align: center;
+}
+.sign{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 200px;
+    align-self: center;
+    border-radius: 7px;
+    justify-content: space-around;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 20px 8px rgba(232,232,232,1);
+    -moz-box-shadow: 0px 0px 20px 8px rgba(232,232,232,1);
+    box-shadow: 0px 0px 20px 8px rgba(232,232,232,1);
+}
+.sign>img{
+    width: 35px;
+    height: 35px;
+    align-self: center;
+}
+.sign  > p{
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    word-spacing: 1.5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-self: center;
+}
